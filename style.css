@@ -6,7 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  
+  font-family:'burgerfont' ;
   
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .top-navbar {
-  position: fixed;
+  position: sticky;
   width: 100%;
   background-color: #f8f1e7;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -174,7 +174,8 @@ main {
 @media (max-width: 540px) {
   /* Adjust body padding */
   body {
-  
+  max-width: 100%;
+  max-height: 100%;
   }
 
   main{
@@ -186,6 +187,7 @@ main {
   /* Top Navbar Adjustments */
   .top-navbar {
 width: 95%;
+position: sticky;
 
   }
 
@@ -236,16 +238,16 @@ width: 95%;
   .maincards {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 96%;
     padding-top: 2%;;
     margin-left: 0;
   }
 
   .card {
-    max-width: 90%;
-    
-    margin-top: 10px;
+   
     margin-bottom: 10px;
+    margin-right: 26px;
+    padding-right: 0px;
   }
 
   .card img {
@@ -338,13 +340,7 @@ width: 95%;
   object-fit: contain;
 }
 
-.second{
 
-  height: 100%;
-  width: 100%;
-  
-  flex-wrap: wrap;
-}
 
 .text-font{
   margin-left: 5%;
@@ -369,11 +365,13 @@ font-size: 18px;
   
   .lastcontent{
     background-color: rgb(238 232 222);
-    margin-left: 7%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding: 0;
+    width: 90%;
     
   }
   .first{
@@ -381,11 +379,13 @@ font-size: 18px;
   }
 
   .text-font{
+    width: 100%;
+    height: auto;
 
     font-family:'burgerfont';
     font-size: 20px;
-  }
-
+    background-color: #0a58ca;
+  
   
 .first img{
   margin-left: 5%;
@@ -394,9 +394,7 @@ font-size: 18px;
   object-fit: contain;
 }
 
-  .second{
-    
-  }
+  
   .text-font img{
     max-width: 40%;
     cursor: pointer;
@@ -445,6 +443,5 @@ align-items: center;
   color: white;
   padding: 20px;
 }
-
+}
 /* tablet view */
-
