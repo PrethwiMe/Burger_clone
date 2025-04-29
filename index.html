@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar with Icons Bar at Bottom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+
+    <nav class="top-navbar navbar navbar-light bg-white">
+      <div class="thead container-fluid d-flex justify-content-between align-items-center">
+
+        <!-- Left: Burger button always visible -->
+        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu">
+          ☰
+        </button>
+
+        <!-- Center: Your Text -->
+        <div class="btext">
+          Burger
+        </div>
+
+        <!-- Right: Profile image + View Cart (hidden on mobile) -->
+        <div class="top-right d-flex align-items-center">
+          <img src="pic/profile.png" alt="Profile" class="profile-image me-2">
+          <a href="#" class="btn btn-outline-primary view-cart-button d-none d-sm-block">
+            <img src="pic/paperbag.png" alt="">
+            View Cart </a>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="bottom-icons-bar">
+    <a href="#" class="bottom-icon"><i class="bi bi-house-door-fill"></i></a>
+    <a href="#" class="bottom-icon"><i class="bi bi-person-fill"></i></a>
+    <a href="#" class="bottom-icon"><i class="bi bi-gear-fill"></i></a>
+    <a href="#" class="bottom-icon"><i class="bi bi-briefcase-fill"></i></a>
+    <a href="#" class="bottom-icon"><i class="bi bi-envelope-fill"></i></a>
+  </div>
+
+  <!-- main -->
+  <main>
+    <!-- content top -->
+    <div class="max row">
+      <div class="content-top ">
+        <div class="quote-offer ">
+          <h1>
+            Fire up your BK® order!
+          </h1>
+          <button>Order pickup</button>
+          <br>
+          <button class="secbtn">Order Delivery</button>
+        </div>
+        <div class="offer-pic">
+          <img src="pic/bg_pic1.avif" class="img-fluid" alt="" loading="lazy">
+        </div>
+      </div>
+      <!-- content-top end -->
+
+      <!-- card -->
+
+      <div class="maincards">
+        <!-- cardOne -->
+        <div class="card" style="">
+          <img src="pic/bg_2.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Your BK® Combo, your way</h5>
+            <p class="card-text">Fries and sides aren’t just an afterthought—they’re the star of the show! Now you can
+              mix it up at and have it your way!</p>
+            <a href="#" class="btn-order btn float-end">Go somewhere</a>
+          </div>
+        </div>
+
+        <!-- card-2 -->
+        <div class="card" style="">
+          <img src="pic/bg_3.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Your favorites, your way. For $5 or $7! </h5>
+            <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+              Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so Have It
+              Your Way</p>
+            <a href="#" class="btn-order btn float-end">Go somewhere</a>
+          </div>
+        </div>
+
+        <!-- card-3 -->
+
+        <div class="card" style="">
+          <img src="pic/bg_3.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Your favorites, your way. For $5 or $7! </h5>
+            <p class="card-text">Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon
+              Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so Have It
+              Your Way</p>
+            <a href="#" class="btn-order btn float-end">Go somewhere</a>
+          </div>
+        </div>
+        <!-- card 4 -->
+      </div>
+      <!-- card-end -->
+
+      <!-- app add -->
+      <div class="lastcontent ">
+        <div class="first">
+          <img src="pic/iphone.avif" alt="">
+        </div>
+
+        <div class="second">
+          <div class="text-font">
+            Save $$$ <br>With offers on demand
+            <p>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other <br> countries. App Store is a service mark of Apple Inc. <br> Google Play is a trademark of Google Inc. Terms apply.</p>
+            <div class="play">
+              <img src="pic/playstore.webp" alt="Play Store">
+              <img src="pic/aloneapple.jpg"  alt="play Store">
+            </div>
+          </div>
+        </div>
+      <!-- app add end -->
+    </div>
+    <!-- max-end -->
+  </main>
+  <!-- main end -->
+  <footer>
+    <div class="brownfooter">
+
+     TM & Copyright 2025 Burger King Company LLC. All Rights Reserved. 
+     <a href="">I Do Not Sell Or Share My Personal Information</a>
+    </div>
+  </footer>
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
