@@ -6,16 +6,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family:'burgerfont' ;
-  
+  font-family: 'burgerfont';
+
 }
 
-body {
+body,html{
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
   overflow-x: hidden;
-  
+
 }
 
 .top-navbar {
@@ -104,9 +104,9 @@ body {
 }
 
 main {
-  
+
   background-color: #f8f1e7;
-  
+
 }
 
 .content-top {
@@ -131,6 +131,7 @@ main {
 }
 
 .offer-pic {
+  
   flex: 1 1 300px;
   text-align: center;
 }
@@ -140,7 +141,7 @@ main {
   height: auto;
   max-width: 40rem;
   min-width: 200px;
-  margin-right: 2%;
+  margin-right: 12%;
   object-fit: contain;
 }
 
@@ -162,7 +163,13 @@ main {
   border: 1px solid #000;
 }
 
-/* Responsive for Tablets and Below */
+.one{
+
+
+  display: none;
+}
+
+
 @media (max-width: 768px) {
   .quote-offer h1 {
     font-size: 6vw;
@@ -170,24 +177,29 @@ main {
   }
 }
 
-/* Responsive for mobile screens (below 540px) */
-@media (max-width: 540px) {
-  /* Adjust body padding */
+@media (min-width: 1414px) {
+
+
+}
+@media (max-width: 1300px) {
+
+  
   body {
-  max-width: 100%;
-  max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
   }
 
-  main{
-    
+  .one{
+    display: flex;
   }
-.content-top{
-  margin-top: 15%;
-}
-  /* Top Navbar Adjustments */
+
+  .content-top {
+    margin-top: 15%;
+  }
+
   .top-navbar {
-width: 95%;
-position: sticky;
+    width: 100%;
+    position: sticky;
 
   }
 
@@ -195,7 +207,6 @@ position: sticky;
     font-size: 24px;
   }
 
-  /* Profile Image adjustments */
   .profile-image {
     width: 30px;
     height: 30px;
@@ -218,16 +229,21 @@ position: sticky;
   .quote-offer h1 {
     font-size: 8vw;
   }
-  .offer-pic{
+
+  .offer-pic {
 
     max-width: 100%;
     height: auto;
+    display: none;
   }
+
+
   .offer-pic img {
-    width: 100%;
     max-width: 100%;
     min-width: 100%;
     margin-left: 3%;
+    display: none;
+    
   }
 
   .quote-offer button {
@@ -236,24 +252,29 @@ position: sticky;
   }
 
   .maincards {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
     align-items: center;
-    width: 96%;
-    padding-top: 2%;;
-    margin-left: 0;
+    height: auto;
+    width: auto;
+    padding-bottom: 10%;
   }
 
   .card {
-   
+
     margin-bottom: 10px;
-    margin-right: 26px;
-    padding-right: 0px;
+    
+    gap: 5%;
+    
   }
 
   .card img {
-    width: 95%;
+    width: 100%;
     height: auto;
     object-fit: contain;
+    
   }
 
   .card-title {
@@ -271,7 +292,7 @@ position: sticky;
     margin-top: 10px;
   }
 
-  
+
 }
 
 .maincards {
@@ -283,15 +304,16 @@ position: sticky;
   gap: 5%;
   height: auto;
   width: auto;
-  margin-left: 6%;
   padding-bottom: 10%;
+  padding-left: 5%;
+  
 }
 
 .card {
   background-color: aliceblue;
   max-width: 40rem;
   max-height: 35rem;
-  margin-top: 10px;
+  margin-top: 5%;
 }
 
 .card img {
@@ -325,15 +347,15 @@ position: sticky;
   flex-direction: row;
 }
 
-.first{
+.first {
 
- max-width: 50%;
- height: 60%;
-  
+  max-width: 50%;
+  height: 60%;
+
   flex-wrap: wrap;
 }
 
-.first img{
+.first img {
   margin-left: 0px;
   max-width: 100%;
   height: auto;
@@ -342,106 +364,127 @@ position: sticky;
 
 
 
-.text-font{
+.text-font {
   margin-left: 5%;
-  font-family:'burgerfont';
+  font-family: 'burgerfont';
   font-size: 70px;
   color: rgb(80, 35, 20);
 }
 
-.text-font p{
-font-family: 'Flame-RegularSans';
-font-size: 18px;
+.text-font p {
+  font-family: 'Flame-RegularSans';
+  font-size: 18px;
 }
 
-.play img{
+.play img {
   max-width: 30%;
   cursor: pointer;
-  
+
 }
 
 
 @media (max-width :500px) {
-  
-  .lastcontent{
+
+  .lastcontent {
     background-color: rgb(238 232 222);
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     padding: 0;
-    width: 90%;
-    
-  }
-  .first{
-    
+    width: 100%;
+
   }
 
-  .text-font{
+  .text-font {
     width: 100%;
     height: auto;
-
-    font-family:'burgerfont';
+    font-family: 'burgerfont';
     font-size: 20px;
-    background-color: #0a58ca;
-  
-  
-.first img{
-  margin-left: 5%;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-  
-  .text-font img{
-    max-width: 40%;
-    cursor: pointer;
     
   }
-  .text-font p{
-    font-family: 'Flame-RegularSans';
-    font-size: 10px;
+
+    .first img {
+      margin-left: 5%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
     }
 
-    .brownfooter{
-      max-width: 100%;
-      height:10vh;
-      min-width: auto;
-     background-color: #502314;
-     margin-bottom: 35px;
-     color: white;
-     font-family: 'Times New Roman', Times, serif;
-    display: flex;
-     justify-content: center;
-    align-items: center;
-    font-size: 10px;
-    
+
+    .text-font img {
+      max-width: 40%;
+      cursor: pointer;
+
     }
-    
-    .brownfooter a{
+
+    .text-font p {
+      margin-top: 2%;
+      font-family: 'Flame-RegularSans';
+      font-size: 10px;
+    }
+
+    .brownfooter {
+      max-width: 100%;
+      height: 10vh;
+      min-width: auto;
+      background-color: #502314;
+      margin-bottom: 35px;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+
+    }
+
+    .brownfooter a {
       color: white;
     }
+  
+
+  .brownfooter {
+    max-width: 100%;
+    height: 10vh;
+    min-width: auto;
+    background-color: #502314;
+    margin-bottom: 70px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .brownfooter a {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 1%;
+  }
+  
 }
 
-.brownfooter{
+.brownfooter {
   max-width: 100%;
-  height:10vh;
+  height: 10vh;
   min-width: auto;
- background-color: #502314;
- margin-bottom: 70px;
- color: white;
- font-family: 'Times New Roman', Times, serif;
-display: flex;
- justify-content: center;
-align-items: center;
-
-}
-
-.brownfooter a{
+  background-color: #502314;
+  margin-bottom: 70px;
   color: white;
-  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+.brownfooter a {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  padding: 1%;
+  font-size: 12;
 }
-/* tablet view */
+
